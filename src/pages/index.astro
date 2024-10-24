@@ -1,5 +1,5 @@
 ---
-
+import '../styles/main.css';
 ---
 
 <html lang="en">
@@ -8,9 +8,22 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Frontend Mentor Challenge</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1 class="sr-only">FM-qr-code-challenge</h1>
+		<main class="bg-slate-300 h-screen grid place-content-center">
+			<div class="card p-4 pb-10 bg-white max-w-80 rounded-xl">
+				<img src="../../Assets/images/image-qr-code.png" class="rounded-xl mb-3" alt="home image">
+				<div class="info px-5">
+					<h2 class="font-primary font-bold text-slate-900 text-center mb-5 text-xl">
+						Improve your front-end skills by building projects
+					</h2>
+					<p class="text-slate-500 text-[15px] text-center">
+						Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+					</p>
+				</div>
+			</div>
+		</main>
 	</body>
 </html>
